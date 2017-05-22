@@ -1,6 +1,6 @@
-#Savvy's Summer 2017 Project Log
+# Savvy's Summer 2017 Project Log
 
-##Monday, May 22
+## Monday, May 22
 
 - First day on the job! :)
 - Alex thought I was starting next week, so everything was a little bit disorganized. However, this might be good because it allows more flexibility and we are all on the same page. 
@@ -19,12 +19,13 @@
 	+ went through all the settings
 	+ generally familiarized myself with the operating system -- feeling much more comfortable
 	+ generally started establishing a workflow for myself
+- Created a GitHub repository for the project
 
 
-###Notes for tomorrow:
+### Notes for tomorrow:
 
 - Waiting on Siria to add me to:
 	+ Slack
 	+ Mailing List
 	+ Group Calendar
-	+ 
+- 
