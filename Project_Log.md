@@ -3,10 +3,11 @@
 ## Monday, May 22
 
 - First day on the job! :)
-- Alex thought I was starting next week, so everything was a little bit disorganized. However, this might be good because it allows more flexibility and we are all on the same page. 
+- Alex thought I was starting next week, so everything was a little bit disorganized. However, this is a good thing in my eyes because it allows more flexibility and we are all on the same page. 
 - We started by going over some basic expectations and taking care of some initial operational stuff. 
 	+ Created a shared Trello to outline tasks, etc. [Link to First Week Planning Trello board](https://trello.com/b/rSJNqnK7/first-week)
 	+ Alex gave me a very high-level overview of the job -- still need to find out more. 
+	+ 
 - Took care of I-9 form and card swipe access with Felix -- **still need to get Slack set up, Mailing List Access, Group Calendar**
 - Established communication protocols:
 	+ Trello (see above)
@@ -28,11 +29,18 @@
 	+ generally started establishing a workflow for myself
 - Created a GitHub repository for the project
 - Reviewed GitHub markdown syntax to create my log and schedule files
+- Created a Rough Draft Schedule and asked Alex for feedback -- currently waiting for his response
+- *Note:* I won't be able to use Odyssey until Wednesday noon *at least* so I have to put a lot of my tasks on hold. Best to focus on working with the other technologies as best as I can. 
 
 
-### Notes for tomorrow:
+### Goals for tomorrow:
 
-- Waiting on Siria to add me to:
+- Check with Siria on:
 	+ Slack
 	+ Mailing List
 	+ Group Calendar
+- Check with Alex on:
+	+ Draft Schedule
+- Start learning about MongoDB and/or Docker
+
+
