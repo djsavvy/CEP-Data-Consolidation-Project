@@ -21,6 +21,7 @@
 	+ Read through several of the docs pages
 	+ Watched the introduction video, completed the online quiz and survey (done with necessary steps)
 		* [Located here](https://www.rc.fas.harvard.edu/training/introduction-to-odyssey-online/)
+	+ Practiced using SCP to transfer files from Odyssey to my local machine
 	+ Still need to familiarize myself more with file structure of the Work Units -- going to wait until next week to do that since Odyssey will go down for maintenance tonight through the next 3 days
 - Did some general customization/installation on the Mac that has been assigned to me for the summer
 	+ installed Sublime Text, Chrome
@@ -42,5 +43,13 @@
 - Check with Alex on:
 	+ Draft Schedule
 - Start learning about MongoDB and/or Docker
+
+
+### Goals for after Odyssey comes back up:
+
+- Ask Alex to introduce me to the directory structure (or just explore it myself)
+	+ *Note:* Don't forget to somehow enable "show hidden files and folders" while browsing to make sure I don't miss anything!
+	+ /n/aspuru_lab versus /n/aspuru_lab2 -- why two directories?
+	+ non-Odyssey data sources -- Alex mentioned that Harvard's own data centers would be overwhelmed by the computations needed and that they are sent to IBM -- determine locations of those
 
 
