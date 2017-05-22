@@ -43,6 +43,12 @@
 - Check with Alex on:
 	+ Draft Schedule
 - Start learning about MongoDB and/or Docker
+	+ spin up Mongo instance in Docker
+	+ both write and query data to/from it
+- Also use an Anaconda environment with MongoDB
+	+ useful later for re-parsing CEP files
+- Also research (if I hit a wall) Jupyter notebooks
+	+ cool interactions between Sage and Jupyter
 
 
 ### Goals for after Odyssey comes back up:
@@ -50,6 +56,10 @@
 - Ask Alex to introduce me to the directory structure (or just explore it myself)
 	+ *Note:* Don't forget to somehow enable "show hidden files and folders" while browsing to make sure I don't miss anything!
 	+ /n/aspuru_lab versus /n/aspuru_lab2 -- why two directories?
+		* Alex is not sure what's in these
+		* another one too -- aag, a2g2
+		* a lot of stuff in /n/aagfs01, some of which is old CEP stuff consolidated (missing a lot though)
+		* be SUPER careful in those directories -- I have admin rights
 	+ non-Odyssey data sources -- Alex mentioned that Harvard's own data centers would be overwhelmed by the computations needed and that they are sent to IBM -- determine locations of those
 
 
