@@ -36,4 +36,3 @@
 	+ Slack
 	+ Mailing List
 	+ Group Calendar
-- 
