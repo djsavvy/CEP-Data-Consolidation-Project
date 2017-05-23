@@ -97,7 +97,18 @@ The latter design has a number of advantages:
 ### Afternoon Tasks:
 
 - Practiced using the Python interface to connect to MongoDB, insert documents, run queries, and update the database: [MongoDB-test/test.py](/MongoDB-test/test.py)
--  
+- Played around with Robomongo (a MongoDB GUI client)
+- Went through the Docker tutorial
+
+
+### Goals for Tomorrow:
+
+Alex suggested a project that would combine Docker and MongoDB:
+- create a MongoDB instance within Docker
+- convert my PyMongo test script into one that remotely connects to Docker instance running the database (essentially create a local, simulated mallspace.rc to run tests with)
+- run this new Python script inside a Conda environment (requires a separate script to set up) that imports PyMongo
+
+
 
 
 
