@@ -7,7 +7,6 @@
 - We started by going over some basic expectations and taking care of some initial operational stuff. 
 	+ Created a shared Trello to outline tasks, etc. [Link to First Week Planning Trello board](https://trello.com/b/rSJNqnK7/first-week)
 	+ Alex gave me a very high-level overview of the job -- still need to find out more. 
-	+ 
 - Took care of I-9 form and card swipe access with Felix -- **still need to get Slack set up, Mailing List Access, Group Calendar**
 - Established communication protocols:
 	+ Trello (see above)
@@ -49,6 +48,7 @@
 	+ useful later for re-parsing CEP files
 - Also research (if I hit a wall) Jupyter notebooks
 	+ cool interactions between Sage and Jupyter
+	+ not directly related to this project, just more for my own sake
 
 
 ### Goals for after Odyssey comes back up:
@@ -61,5 +61,11 @@
 		* a lot of stuff in /n/aagfs01, some of which is old CEP stuff consolidated (missing a lot though)
 		* be SUPER careful in those directories -- I have admin rights
 	+ non-Odyssey data sources -- Alex mentioned that Harvard's own data centers would be overwhelmed by the computations needed and that they are sent to IBM -- determine locations of those
+
+
+
+
+## Tuesday, May 23
+
 
 
