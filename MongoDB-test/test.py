@@ -23,7 +23,7 @@ doc_savvy = {"name" : "Savvy",
 
 squad.insert_one(doc_savvy)
 
-#Give him some squad in the collection
+#Give him some friends in the collection
 
 docs_friends = []
 
