@@ -29,7 +29,7 @@
 	+ generally started establishing a workflow for myself
 - Created a GitHub repository for the project
 - Reviewed GitHub markdown syntax to create my log and schedule files
-- Created a [Rough Draft Schedule](https://github.com/djsavvy/savvy-summer-2017-CEP-Data-Consolidation-Project/blob/master/Rough_Draft_Schedule.md) and asked Alex for feedback -- currently waiting for his response
+- Created a [Rough Draft Schedule](/Rough_Draft_Schedule.md) and asked Alex for feedback -- currently waiting for his response
 - *Note:* I won't be able to use Odyssey until Wednesday noon *at least* so I have to put a lot of my tasks on hold. Best to focus on working with the other technologies as best as I can. 
 
 
