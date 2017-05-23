@@ -12,7 +12,7 @@
 	+ Trello (see above)
 	+ Daily meeting with Alex around 11am
 	+ Weekly meeting with entire team on Thursday afternoons
-- Alex treated me to lunch :simple_smile:
+- Alex treated me to lunch :smile:
 	+ said he's leaving the lab in August :cry:
 - Went through a review of UNIX shell [Link here](https://software.rc.fas.harvard.edu/training/workshop_intro_unix/latest/#(1))
 - Research Computing (RC) and Odyssey:
@@ -48,7 +48,7 @@
 	+ useful later for re-parsing CEP files
 - Also research (if I hit a wall) Jupyter notebooks
 	+ cool interactions between Sage and Jupyter
-	+ not directly related to this project, just more for my own sake
+	+ not directly related to this project, just more for my own sake	
 
 
 ### Goals for after Odyssey comes back up:
@@ -67,5 +67,26 @@
 
 ## Tuesday, May 23
 
+- Added to Slack, mailing list, and calendar!
+- Alex approved the first draft of my 
+- Read through the "Introduction" section of the MongoDB docs and relevant links
 
+#### Meeting with Alex:
+
+This afternoon I should create some sort of test app with Mongo -- insert, read, and modify data -- to get the hang of things. 
+
+However, in the longer term, as discussed before (i.e. during my interview), Mongo probably is not the best technology to use for the project, as future analyses for the project might want to capitalize on having relationships between data (i.e. a relational database is probably best for the job). 
+
+Regardless of the database system we end up using, we will have a few standard fields, with an amorphous "blob" field, stored as JSON (object : value pairs). 
+
+Possible solutions:
+- Use PostgreSQL -- has a JSON field
+- Pure SQL, but with an entity-attribute-value system
+	+ essentially, instead of one row per molecule, have one row per feature per molecule
+
+The latter design has a number of advantages:
+- Allows parsing to be done modularly (i.e. instead of writing one giant parser, you can choose only to parse specifically the fields that you want at once -- easy to add in data from new fields later)
+- Allows analysis to be done modularly -- the schema can be blind to whatever future modes of analysis must be done (i.e. don't need to plan ahead for what types of analysis others might want to do -- it's all there)
+- You can always create views or data-dump microtables containing arbitrary subsets of data
+- Easier to manage gaps in data -- i.e. different QChem outputs with different fields included or missing
 
