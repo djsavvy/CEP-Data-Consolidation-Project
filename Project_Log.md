@@ -29,7 +29,7 @@
 	+ generally started establishing a workflow for myself
 - Created a GitHub repository for the project
 - Reviewed GitHub markdown syntax to create my log and schedule files
-- Created a Rough Draft Schedule and asked Alex for feedback -- currently waiting for his response
+- Created a [Rough Draft Schedule](https://github.com/djsavvy/savvy-summer-2017-CEP-Data-Consolidation-Project/blob/master/Rough_Draft_Schedule.md) and asked Alex for feedback -- currently waiting for his response
 - *Note:* I won't be able to use Odyssey until Wednesday noon *at least* so I have to put a lot of my tasks on hold. Best to focus on working with the other technologies as best as I can. 
 
 
@@ -67,11 +67,14 @@
 
 ## Tuesday, May 23
 
+### Morning Tasks:
+
 - Added to Slack, mailing list, and calendar!
 - Alex approved the first draft of my 
 - Read through the "Introduction" section of the MongoDB docs and relevant links
 
-#### Meeting with Alex:
+
+### Meeting with Alex:
 
 This afternoon I should create some sort of test app with Mongo -- insert, read, and modify data -- to get the hang of things. 
 
@@ -89,4 +92,11 @@ The latter design has a number of advantages:
 - Allows analysis to be done modularly -- the schema can be blind to whatever future modes of analysis must be done (i.e. don't need to plan ahead for what types of analysis others might want to do -- it's all there)
 - You can always create views or data-dump microtables containing arbitrary subsets of data
 - Easier to manage gaps in data -- i.e. different QChem outputs with different fields included or missing
+
+
+### Afternoon Tasks:
+
+- Practiced using the Python interface to connect to MongoDB, insert documents, run queries, and update the database: [MongoDB-test/test.py]() 
+
+
 
