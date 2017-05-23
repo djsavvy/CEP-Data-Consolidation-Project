@@ -96,7 +96,8 @@ The latter design has a number of advantages:
 
 ### Afternoon Tasks:
 
-- Practiced using the Python interface to connect to MongoDB, insert documents, run queries, and update the database: [MongoDB-test/test.py]() 
+- Practiced using the Python interface to connect to MongoDB, insert documents, run queries, and update the database: [MongoDB-test/test.py](/MongoDB-test/test.py)
+-  
 
 
 
