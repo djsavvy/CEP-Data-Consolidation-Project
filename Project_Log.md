@@ -110,5 +110,15 @@ Alex suggested a project that would combine Docker and MongoDB:
 
 
 
+## Wednesday, May 24
 
-
+- Started off by going through a Vim tutorial -- I was already familiar with the best text editor in the Universe, albeit barely:
+	+ Only really knew how to switch between normal and insert mode, as well as how to write and quit -- not really the best competency. 
+	+ I'm going to have to learn to edit text files purely within the terminal anyway to work with Odyssey, so this is well worth the invested time. 
+- Alex told me to map Caps Lock to ESC -- quite awesome!
+- Alex also gave me BitBucket access to some of the previous CEB/a2g2 code just for reference.
+- I updated yesterday's Pymongo project to connect to a MongoDB instance within Docker
+	+ This tripped me up for several hours, as I was having issues with port connection; the stupid thing I was missing was that I had to map port 27107 (the mongo port) to itself. Not really sure why that fixed the issue, but it did. 
+	+ There was no modification to the actual Python code, or even the database connection code. My mapping 27017 in docker to 27017, I got mongo to connect to the docker instance instead of a local one
+	+ I even tested this by uninstalling mongodb locally and making sure it still worked within Docker!
+	+ Location of bash script: /docker-mongo-integration-test/docker-mongo-integration-test.sh
