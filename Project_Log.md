@@ -121,4 +121,4 @@ Alex suggested a project that would combine Docker and MongoDB:
 	+ This tripped me up for several hours, as I was having issues with port connection; the stupid thing I was missing was that I had to map port 27107 (the mongo port) to itself. Not really sure why that fixed the issue, but it did. 
 	+ There was no modification to the actual Python code, or even the database connection code. My mapping 27017 in docker to 27017, I got mongo to connect to the docker instance instead of a local one
 	+ I even tested this by uninstalling mongodb locally and making sure it still worked within Docker!
-	+ Location of bash script: /docker-mongo-integration-test/docker-mongo-integration-test.sh
+	+ Location of bash script: [docker-mongo-integration.sh](/docker-mongo-integration-test/docker-mongo-integration-test.sh)
