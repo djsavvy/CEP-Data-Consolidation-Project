@@ -105,7 +105,7 @@ The latter design has a number of advantages:
 
 Alex suggested a project that would combine Docker and MongoDB:
 - create a MongoDB instance within Docker
-- convert my PyMongo test script into one that remotely connects to Docker instance running the database (essentially create a local, simulated mallspace.rc to run tests with)
+- convert my PyMongo test script into one that remotely connects to Docker instance running the database (essentially create a local, simulated molspace.rc to run tests with)
 - run this new Python script inside a Conda environment (requires a separate script to set up) that imports PyMongo
 
 
