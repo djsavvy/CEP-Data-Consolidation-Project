@@ -122,3 +122,43 @@ Alex suggested a project that would combine Docker and MongoDB:
 	+ There was no modification to the actual Python code, or even the database connection code. My mapping 27017 in docker to 27017, I got mongo to connect to the docker instance instead of a local one
 	+ I even tested this by uninstalling mongodb locally and making sure it still worked within Docker!
 	+ Location of bash script: [docker-mongo-integration.sh](/docker-mongo-integration-test/docker-mongo-integration-test.sh)
+- Received information to connect to the existing Odyssey MongoDBs (both as an administrator and a read-only user)
+
+
+
+## Thursday, May 25
+
+- Struggled quite a bit with the sheer size of the database -- I tried running some simple queries (i.e. an array field exists and has nonempty results) and they took 20+ minutes to run. Furthermore, I am having a weird issue where that query runs correctly on small datasets (i.e. 100K records) but fails on the entire collection (77M records). Not really sure what is going on there. 
+- Also apparently my administrator mongo connection does not have access to view running operations and kill them -- need to try and get access for that. 
+- Possible solutions to the size issues for when I am testing my scripts:
+	+ Pre-query limiting -- I can do this with mongo's aggregate function using $limit
+	+ Create my own db by copying some documents from the CEP databases
+	+ Build a test DB from scratch and populate it with my own data to test scripts
+
+### Meeting with Alex
+
+I am going to try taking a slightly different direction in the project -- instead of going with a depth-first approach of trying to understand/investigate the databases one collection at a time, one column at a time, I will instead compile a list of columns for each database -- this will give me a list of all columns and let me determine relationships between them. Useful to choose a list of columns for when I create the new, consolidated database. Two possible approaches:
+- Search around for mongo metadata -- technically not supposed to use this, but probably works, if I can access some list of all the columns. 
+- (more likely result) I will have to write a script to search for all top-level (calculations) and second-level (metadata) fields. 
+	+ I can do this with a python script that collects list of columns into a set
+
+List of resources to parallelize programs:
+- GNU parallel program -- give it a command and it runs it on different cores on the local machine
+- wihtin Python -- multiprocessing -- have to actually alter code
+- Python async I/O (relatively new)
+- The little book of Semaphores by Allen Downey -- cool resource to check out 
+
+
+## Friday, May 25 - Thursday, Jun 1
+
+- Unfortunately, I got really sick :(
+	+ Took Friday off, Monday was a holiday, have been working half-days since then
+- I wrote a few different versions of a program to get all the fields from a collection in a db in the molspace.rc.fas.harvard.edu server
+	+ One is a thread unsafe version that uses multithreading but no concurrency, and is not actually thread-safe
+		* This was my first implementation
+	+ The second one uses multiprocessing to run it in parallel, is process-safe
+		* Took me a long time to figure out, very hackish solution
+		* It would be worth it for me to do a writeup on how I got it to work, since nobody online who asked this question got an answer
+- I made sure both versions of the program did not include the login credentials so I could safely push them to github
+
+
