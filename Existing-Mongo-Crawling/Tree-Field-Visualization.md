@@ -206,3 +206,80 @@ This is a compilation of all the fields in all the collections in all the CEP da
 
 
 ## cep_mol_test
+
+- calculation
+	- \_id
+	- meta_data
+		- key
+		- data_type
+		- inchi_key
+		- status
+			- status_list
+			- work_history_list
+			- current_work_priority
+			- suggested
+			- approved
+			- synthesized
+			- characterized
+			- device_made
+			- wu_created
+			- wu_analyzed
+			- released
+			- transferred
+			- current_status
+			- current_work_order
+			- wcg_batch
+		- atom_list
+		- annotation_list
+		- tag_list
+		- generation
+		- user_defined_list
+		- user_defined_dict
+		- document_creation_date
+		- document_update_date
+		- program
+		- version
+		- host
+		- wall_clock_time
+		- worker_name
+		- project_name
+		- contact_name
+		- contact_email
+	- molecule
+	- descriptor_list
+	- calculation_type_list
+	- file_list
+	- theory
+		- theory_level
+		- theory_description
+		- solvent_model
+		- annotation_list
+	- parent_calculation_list
+	- child_calculation_list
+	- coord_list
+	- orbital_energy_list
+	- normal_mode_list
+	- excited_states
+	- velocity_list
+	- properties
+		- total_energy
+		- unrestricted_homo_list
+		- unrestricted_lumo_list
+		- unrestricted_gap_list
+		- unrestricted_occupied_orbital_number
+		- multipoles
+		- rmsd_w_parent_list
+		- sites
+		- distance_matrix
+	- user_defined_property_dict
+	- user_defined_property_list
+
+
+- file_audit_trail
+	- \_id
+	- file_name
+	- file_status
+	- user_defined_list
+	- user_defined_dict
+	- document_creation_date
+	- document_update_date
