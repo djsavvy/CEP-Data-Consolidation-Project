@@ -146,15 +146,15 @@ def main(argv):
     cpu_count = multiprocessing.cpu_count()
     print("CPU cores for parallelization: ", str(cpu_count), " (not relevant to this implementation)")
 
-#    cursors = coll.parallel_scan(cpu_count)
-    cursors = coll.parallel_scan(100)
+    cursors = coll.parallel_scan(cpu_count)
+#    cursors = coll.parallel_scan(100)
     print("Number of cursors provided by the server: ", len(cursors))
     client.close()
 
 
 
     jobs = []
-    custom_cursors = custom_parallel_scan(coll, 200)
+    custom_cursors = custom_parallel_scan(coll, cpu_count)
     for ccursor in custom_cursors:
         p = multiprocessing.Process(target = fullProcessCcursor, args = (process_fields_list, total_records_read, ccursor, username, password, db_name, coll_name, records_lock))
         jobs.append(p)
