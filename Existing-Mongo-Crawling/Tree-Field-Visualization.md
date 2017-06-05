@@ -73,4 +73,136 @@ This is a compilation of all the fields in all the collections in all the CEP da
 
 ## cep_legacy
 
-- 
+- calculation
+	- \_id
+	- calculation_type_list
+	- child_calculation_list
+	- coord_list
+	- descriptor_list
+	- excited_states
+	- file_list
+	- meta_data
+		- key
+		- data_type
+		- inchi
+		- inchi_key
+		- smiles
+		- status
+			- status_list
+			- work_history_list
+			- current_work_priority
+			- current_status
+			- suggested
+			- approved
+			- synthesized
+			- characterized
+			- device_made
+			- wu_created
+			- wu_analyzed
+		- atom_list
+		- annotation_list
+		- tag_list
+		- generation
+		- user_defined_list
+		- user_defined_dict
+			- mol_obj_from
+			- zip_file
+			- sa_score
+			- clc_file
+			- audit_trail_id
+		- document_creation_date
+		- document_update_date
+		- project_name
+		- mass
+	- molecule
+	- normal_mode_list
+	- orbital_energy_list
+	- parent_calculation_list
+	- theory
+		- theory_level
+		- theory_description
+		- solvent_model
+		- annotation_list
+	- user_defined_property_dict
+	- user_defined_property_list
+	- velocity_list
+	- properties *(most, but not all records have this field)*
+		- total_energy
+		- total_nuclear_energy
+		- homo
+		- lumo
+		- gap
+		- unrestricted_homo_list
+		- unrestricted_lumo_list
+		- unrestricted_gap_list
+		- sa_score
+		- unrestricted_occupied_orbital_number
+		- power_conversion_efficiency
+		- open_circuit_voltage
+		- short_circuit_current_density
+		- rmsd_w_parent_list
+		- sites 
+		- distance_matrix
+
+
+- descriptor *(empty collection*)
+
+
+- file_audit_trail
+	- \_id
+	- document_creation_date
+	- document_update_date
+	- file_name
+	- file_status
+	- user_defined_dict
+		- cep_file_list
+		- target_geom_list
+		- full_file_list
+		- target_file_list
+	- user_defined_list *(looks like a log from some generating script)*
+
+
+- molecule
+	- \_id
+	- calculation_list
+	- child_list
+	- descriptor_list
+	- diagram_list
+	- file_list
+	- meta_data
+		- annotation_list
+		- atom_list
+		- data_type
+		- document_creation_date
+		- document_update_date
+		- generation
+		- inchi
+		- inchi_key
+		- key
+		- mass
+		- project_name
+		- smiles
+		- status
+			- status_list
+			- work_history_list
+			- current_status
+			- suggested
+			- approved
+			- synthesized
+			- characterized
+			- device_made
+			- wu_created
+			- wu_analyzed
+		- tag_list
+		- user_defined_dict
+			- mol_obj_from
+			- zip_file
+			- audit_trail_id
+			- sa_score
+		- user_defined_list
+	- nickname_list
+	- parent_list
+	- reactive_mol_list
+
+
+## cep_mol_test
