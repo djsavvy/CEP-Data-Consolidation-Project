@@ -21,7 +21,7 @@ DATABASES=(adorsk_foo cep_hash cep_legacy cep_mol_test cep_perf cep_perf_legacy 
 
 for database in $DATABASES;
 do
-	echo python3 migrator.py --username "${MONGOUSER}" --password "${PASSWORD}" --db "${database}"
-	python3 migrator.py --username "${MONGOUSER}" --password "${PASSWORD}" --db "${database}"
+	echo python3 migrator.py --username "${MONGOUSER}" --password "${PASSWORD}" --db "$database"
+	python3 migrator.py --username "${MONGOUSER}" --password "${PASSWORD}" --db "$database"
 
 done

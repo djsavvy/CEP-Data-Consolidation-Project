@@ -1,0 +1,2 @@
+Found  1  distinct species.
+{2263660569244173573: ('_id', 'count')}

@@ -1,0 +1,15 @@
+Hash:  -6197981453897688111
+('_id',
+ 'document_creation_date',
+ 'document_update_date',
+ 'file_name',
+ 'file_status',
+ {'user_defined_dict': ('base_directory',
+                        'cep_file_list',
+                        'full_file_list',
+                        'target_directory',
+                        'target_file_list',
+                        'target_geom_list',
+                        'temp_directory',
+                        'working_directory')},
+ 'user_defined_list')

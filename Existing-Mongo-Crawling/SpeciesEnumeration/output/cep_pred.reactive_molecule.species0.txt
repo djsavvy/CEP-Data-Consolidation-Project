@@ -1,0 +1,13 @@
+Hash:  938034389534350343
+('_id',
+ {'meta_data': ('document_creation_date',
+                'document_update_date',
+                'inchi',
+                'inchi_key',
+                'key',
+                'project_name',
+                'smiles',
+                'tag_list')},
+ 'parent_list',
+ 'reference',
+ 'source')

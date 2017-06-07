@@ -1,0 +1,14 @@
+Found  1  distinct species.
+{8655243274487241688: ('_id',
+                       'document_creation_date',
+                       'document_update_date',
+                       'file_name',
+                       'file_status',
+                       {'user_defined_dict': ('base_directory',
+                                              'error_directory',
+                                              'staging_directory',
+                                              'suspend_directory',
+                                              'target_directory',
+                                              'temp_directory',
+                                              'working_directory')},
+                       'user_defined_list')}

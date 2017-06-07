@@ -1,0 +1,2 @@
+Hash:  4250332402900199561
+('_id', 'hash_docs', 'molecules')

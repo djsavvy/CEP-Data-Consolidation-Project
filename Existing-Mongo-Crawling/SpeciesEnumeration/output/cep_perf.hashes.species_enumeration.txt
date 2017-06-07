@@ -1,0 +1,10 @@
+Found  1  distinct species.
+{1406141990815209715: ('_id',
+                       'bits',
+                       'fpt',
+                       'fpt_onbits',
+                       'minhash',
+                       'minhash_chembl',
+                       'minhash_unique',
+                       'modhash',
+                       'molecule')}

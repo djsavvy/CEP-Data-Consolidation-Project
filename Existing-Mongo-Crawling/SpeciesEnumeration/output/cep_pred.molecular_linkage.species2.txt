@@ -1,0 +1,18 @@
+Hash:  -8303641896504467002
+('_id',
+ 'calculation_list',
+ 'child_reactive_mol_list',
+ {'info': ('reaction_method', 'reaction_smarts')},
+ {'meta_data': ('annotation_list',
+                'atom_list',
+                'contact_email',
+                'contact_name',
+                'data_type',
+                'document_creation_date',
+                'document_update_date',
+                'key',
+                'project_name',
+                'tag_list',
+                {'user_defined_dict': ()},
+                'user_defined_list')},
+ 'parent_molecule_list')

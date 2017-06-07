@@ -1,0 +1,11 @@
+Hash:  883010982614836450
+('_id',
+ 'document_creation_date',
+ 'document_update_date',
+ 'file_name',
+ 'file_status',
+ {'user_defined_dict': ('base_directory',
+                        'target_directory',
+                        'temp_directory',
+                        'working_directory')},
+ 'user_defined_list')

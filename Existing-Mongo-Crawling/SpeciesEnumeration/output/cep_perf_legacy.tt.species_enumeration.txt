@@ -1,0 +1,2 @@
+Found  1  distinct species.
+{-1069247910636697000: ('_id', 'tt')}

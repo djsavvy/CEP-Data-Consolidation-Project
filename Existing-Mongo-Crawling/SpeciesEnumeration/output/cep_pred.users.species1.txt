@@ -1,0 +1,2 @@
+Hash:  7125240695171544593
+('_id', 'pwd', 'roles', 'username')
