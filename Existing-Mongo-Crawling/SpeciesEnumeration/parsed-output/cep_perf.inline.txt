@@ -1,0 +1,14 @@
+Super species for cep_perf.inline: [
+	"_id",
+	"value.points"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"value.points"
+]

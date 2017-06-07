@@ -1,0 +1,48 @@
+Super species for cep_perf.molecule: [
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.smiles",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.smiles",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
+]

@@ -1,0 +1,98 @@
+Super species for cep_syn.molecular_linkage: [
+	"_id",
+	"calculation_list",
+	"child_molecule_list",
+	"child_reactive_mol_list",
+	"in_reactive_mol_list",
+	"info.reaction_method",
+	"info.reaction_smarts",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"out_mol_list",
+	"parent_molecule_list",
+	"parent_reactive_mol_list"
+]
+
+A single species (fields missing):[
+	"in_reactive_mol_list",
+	"out_mol_list"
+]
+
+A single species (fields missing):[
+	"child_molecule_list",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"parent_reactive_mol_list"
+]
+
+A single species (fields missing):[
+	"in_reactive_mol_list",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"out_mol_list"
+]
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"calculation_list",
+	"child_reactive_mol_list",
+	"info.reaction_method",
+	"info.reaction_smarts",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"parent_molecule_list"
+]

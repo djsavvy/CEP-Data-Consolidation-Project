@@ -1,0 +1,28 @@
+Super species for cep_perf.hashes: [
+	"_id",
+	"bits",
+	"fpt",
+	"fpt_onbits",
+	"minhash",
+	"minhash_chembl",
+	"minhash_unique",
+	"modhash",
+	"molecule"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"bits",
+	"fpt",
+	"fpt_onbits",
+	"minhash",
+	"minhash_chembl",
+	"minhash_unique",
+	"modhash",
+	"molecule"
+]

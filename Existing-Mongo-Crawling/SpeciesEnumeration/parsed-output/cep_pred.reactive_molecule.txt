@@ -1,0 +1,96 @@
+Super species for cep_pred.reactive_molecule: [
+	"_id",
+	"child_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"molecule",
+	"parent_list",
+	"reference",
+	"source"
+]
+
+A single species (fields missing):[
+	"source"
+]
+
+A single species (fields missing):[
+	"child_list",
+	"source"
+]
+
+A single species (fields missing):[
+	"child_list",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"molecule",
+	"source"
+]
+
+A single species (fields missing):[
+	"child_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.generation",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"molecule"
+]
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.tag_list",
+	"parent_list",
+	"reference"
+]

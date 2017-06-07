@@ -1,0 +1,16 @@
+Super species for cep_perf.hash_15: [
+	"_id",
+	"hash_docs",
+	"molecules"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"hash_docs",
+	"molecules"
+]

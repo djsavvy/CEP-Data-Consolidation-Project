@@ -1,0 +1,99 @@
+Super species for cep_mol_test.molecule: [
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"electron_count",
+	"file_list",
+	"mass",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.name",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_order",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list",
+	"stoichiometry"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+A single species (fields missing):[
+	"meta_data.user_defined_dict.duplicate_conformer"
+]
+
+A single species (fields missing):[
+	"meta_data.status.current_work_order",
+	"meta_data.user_defined_dict.duplicate_conformer"
+]
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"electron_count",
+	"file_list",
+	"mass",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.name",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list",
+	"stoichiometry"
+]

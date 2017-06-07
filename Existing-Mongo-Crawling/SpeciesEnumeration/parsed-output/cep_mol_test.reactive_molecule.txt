@@ -1,0 +1,34 @@
+Super species for cep_mol_test.reactive_molecule: [
+	"_id",
+	"child_list",
+	"creator",
+	"document_creation_date",
+	"document_update_date",
+	"inchi",
+	"inchi_key",
+	"parent_list",
+	"reference",
+	"smiles",
+	"source",
+	"tag_list"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+-------------------------------------------------------------------
+
+Fields present in every species:[
+	"_id",
+	"child_list",
+	"creator",
+	"document_creation_date",
+	"document_update_date",
+	"inchi",
+	"inchi_key",
+	"parent_list",
+	"reference",
+	"smiles",
+	"source",
+	"tag_list"
+]
