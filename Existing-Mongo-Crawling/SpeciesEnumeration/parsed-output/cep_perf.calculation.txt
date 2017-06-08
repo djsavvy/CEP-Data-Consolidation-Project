@@ -54,9 +54,8 @@ A single species (fields missing):[
 	"properties.total_nuclear_energy"
 ]
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"calculation_type_list",
 	"child_calculation_list",
@@ -89,3 +88,7 @@ Fields present in every species:[
 	"user_defined_property_list",
 	"velocity_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

@@ -1,4 +1,4 @@
-# This program parses the outputs that were created by species_enumerator.py
+#This program parses the outputs that were created by species_enumerator.py
 # Run it in the same directory as species_enumerator (not in the output directory)
 
 import os
@@ -7,7 +7,7 @@ import json
 
 # We start off with a list of databases, collections, and filenames that we have
 
-database_list = ('cep_hash', 'cep_legacy', 'cep_mol_test', 'cep_perf', 'cep_pred', 'cep_syn')
+database_list = ('cep_hash', 'cep_legacy', 'cep_mol_test', 'cep_perf', 'cep_perf_legacy', 'cep_pred', 'cep_syn')
 collection_list = { 'cep_hash' : ('calculation', 'molecule'),
                      'cep_legacy' : ('calculation', 'file_audit_trail', 'molecule'),
                      'cep_mol_test' : ('calculation', 'file_audit_trail', 'molecular_linkage', 'molecule', 'reactive_molecule'),
@@ -46,7 +46,7 @@ def file_parser(file_object):
 
 
 def filename_matches_checker(db_name, coll_name, filename):
-    return filename.startswith(db_name + '.' + coll_name) and filename.count('enumerat') == 0
+    return filename.startswith(db_name + '.' + coll_name + '.species') and filename.count('enumerat') == 0
 
 
 # At this point in the program we need to settle on a data storage format. We choose to store the nested fields in the format
@@ -140,6 +140,7 @@ def determine_intersection(extracted_species):
 total_aggregated_super_species = set()
 
 
+
 for db_name in database_list:
     for coll_name in collection_list[db_name]:
         extracted_species, super_species = species_generator(db_name, coll_name)
@@ -158,11 +159,12 @@ for db_name in database_list:
             else:
                 json.dump( sorted(list(species)), outfile, indent = "\t" )
 
-        outfile.write('\n\n')
-        outfile.write('-------------------------------------------------------------------')
-        outfile.write('\n\n')
-        outfile.write('Fields present in every species:')
+        outfile.write('\n\n\n')
+        outfile.write('-----Fields present in every species:-----')
         json.dump( sorted(list(determine_intersection(extracted_species))), outfile, indent = "\t" )
+        outfile.write('\n\n')
+        outfile.write('--------------------------------------------------------------------------------------------')
+        outfile.write('\n\n\n')
 
         outfile.close()
 
@@ -172,4 +174,5 @@ total_aggregated_super_species = delete_useless_empty_dicts(total_aggregated_sup
 outfile = open('parsed-output/total_aggregated_super_species.txt', 'w')
 outfile.write('Total aggregated super species: ')
 json.dump( sorted(list(total_aggregated_super_species)), outfile, indent = "\t" )
+outfile.write('\n\n\n')
 outfile.close()

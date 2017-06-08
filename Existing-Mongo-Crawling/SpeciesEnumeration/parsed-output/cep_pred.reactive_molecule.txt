@@ -79,9 +79,8 @@ A single species (fields missing):[
 	"molecule"
 ]
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"meta_data.document_creation_date",
 	"meta_data.document_update_date",
@@ -94,3 +93,7 @@ Fields present in every species:[
 	"parent_list",
 	"reference"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

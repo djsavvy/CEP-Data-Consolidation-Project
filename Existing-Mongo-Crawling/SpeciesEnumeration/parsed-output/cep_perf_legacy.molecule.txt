@@ -1,25 +1,23 @@
-Super species for cep_mol_test.molecular_linkage: [
+Super species for cep_perf_legacy.molecule: [
 	"_id",
 	"calculation_list",
-	"child_molecule_list",
-	"child_reactive_mol_list",
-	"info.reaction_method",
-	"info.reaction_smarts",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
 	"meta_data.annotation_list",
 	"meta_data.atom_list",
-	"meta_data.contact_email",
-	"meta_data.contact_name",
 	"meta_data.data_type",
 	"meta_data.document_creation_date",
 	"meta_data.document_update_date",
 	"meta_data.key",
-	"meta_data.name",
-	"meta_data.project_name",
+	"meta_data.smiles",
 	"meta_data.tag_list",
 	"meta_data.user_defined_dict.{}",
 	"meta_data.user_defined_list",
-	"parent_molecule_list",
-	"parent_reactive_mol_list"
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
 ]
 
 A single species (fields missing):
@@ -29,25 +27,23 @@ A single species (fields missing):
 -----Fields present in every species:-----[
 	"_id",
 	"calculation_list",
-	"child_molecule_list",
-	"child_reactive_mol_list",
-	"info.reaction_method",
-	"info.reaction_smarts",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
 	"meta_data.annotation_list",
 	"meta_data.atom_list",
-	"meta_data.contact_email",
-	"meta_data.contact_name",
 	"meta_data.data_type",
 	"meta_data.document_creation_date",
 	"meta_data.document_update_date",
 	"meta_data.key",
-	"meta_data.name",
-	"meta_data.project_name",
+	"meta_data.smiles",
 	"meta_data.tag_list",
 	"meta_data.user_defined_dict.{}",
 	"meta_data.user_defined_list",
-	"parent_molecule_list",
-	"parent_reactive_mol_list"
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
 ]
 
 --------------------------------------------------------------------------------------------

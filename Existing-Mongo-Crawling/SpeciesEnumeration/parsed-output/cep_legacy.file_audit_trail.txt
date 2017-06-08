@@ -33,9 +33,8 @@ A single species (fields missing):[
 	"user_defined_dict.target_geom_list"
 ]
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"document_creation_date",
 	"document_update_date",
@@ -43,3 +42,7 @@ Fields present in every species:[
 	"file_status",
 	"user_defined_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

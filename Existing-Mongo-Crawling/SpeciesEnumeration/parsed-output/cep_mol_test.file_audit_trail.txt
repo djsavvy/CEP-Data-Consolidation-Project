@@ -17,9 +17,8 @@ Super species for cep_mol_test.file_audit_trail: [
 A single species (fields missing):
 	(no fields missing) -- the super species actually exists!
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"document_creation_date",
 	"document_update_date",
@@ -34,3 +33,7 @@ Fields present in every species:[
 	"user_defined_dict.working_directory",
 	"user_defined_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

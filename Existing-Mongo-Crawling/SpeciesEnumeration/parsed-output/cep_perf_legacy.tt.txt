@@ -1,7 +1,6 @@
-Super species for cep_perf.hash_1: [
+Super species for cep_perf_legacy.tt: [
 	"_id",
-	"hash_docs",
-	"molecules"
+	"tt"
 ]
 
 A single species (fields missing):
@@ -10,8 +9,7 @@ A single species (fields missing):
 
 -----Fields present in every species:-----[
 	"_id",
-	"hash_docs",
-	"molecules"
+	"tt"
 ]
 
 --------------------------------------------------------------------------------------------

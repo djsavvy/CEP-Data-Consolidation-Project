@@ -1,0 +1,956 @@
+Super species for cep_syn.calculation: [
+	"_id",
+	"calculation_type_list",
+	"child_calculation_list",
+	"coord_list",
+	"descriptor_list",
+	"excited_states",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.host",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.program",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_order",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.wcg_batch",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.clc_file",
+	"meta_data.user_defined_dict.sa_score",
+	"meta_data.user_defined_dict.zip_file",
+	"meta_data.user_defined_list",
+	"meta_data.version",
+	"meta_data.wall_clock_time",
+	"meta_data.worker_name",
+	"molecule",
+	"normal_mode_list",
+	"orbital_energy_list",
+	"parent_calculation_list",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.rmsd_w_parent_list",
+	"properties.sa_score",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_energy",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number",
+	"theory.annotation_list",
+	"theory.solvent_model.{}",
+	"theory.theory_description",
+	"theory.theory_level",
+	"user_defined_property_dict.{}",
+	"user_defined_property_list",
+	"velocity_list"
+]
+
+A single species (fields missing):[
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"properties.multipoles"
+]
+
+A single species (fields missing):[
+	"meta_data.host",
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.wall_clock_time",
+	"properties.multipoles"
+]
+
+A single species (fields missing):[
+	"meta_data.inchi",
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.smiles",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.sa_score",
+	"properties.multipoles",
+	"properties.sa_score"
+]
+
+A single species (fields missing):[
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.host",
+	"meta_data.program",
+	"meta_data.project_name",
+	"meta_data.status.current_work_order",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wcg_batch",
+	"meta_data.user_defined_dict.clc_file",
+	"meta_data.user_defined_dict.zip_file",
+	"meta_data.version",
+	"meta_data.wall_clock_time",
+	"meta_data.worker_name",
+	"properties.multipoles"
+]
+
+A single species (fields missing):[
+	"meta_data.inchi",
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.smiles",
+	"meta_data.user_defined_dict.clc_file",
+	"meta_data.user_defined_dict.sa_score",
+	"meta_data.user_defined_dict.zip_file",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.sa_score",
+	"properties.short_circuit_current_density",
+	"properties.total_nuclear_energy"
+]
+
+A single species (fields missing):[
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.zip_file",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.rmsd_w_parent_list",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_energy",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+A single species (fields missing):[
+	"descriptor_list",
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wu_analysed",
+	"meta_data.user_defined_dict.clc_file",
+	"meta_data.user_defined_dict.zip_file",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+A single species (fields missing):[
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.zip_file",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.rmsd_w_parent_list",
+	"properties.sa_score",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_energy",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+A single species (fields missing):[
+	"meta_data.host",
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.zip_file",
+	"meta_data.wall_clock_time",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.rmsd_w_parent_list",
+	"properties.sa_score",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_energy",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+A single species (fields missing):[
+	"meta_data.inchi",
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.smiles",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.sa_score",
+	"meta_data.user_defined_dict.zip_file",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.rmsd_w_parent_list",
+	"properties.sa_score",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_energy",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+A single species (fields missing):[
+	"descriptor_list",
+	"meta_data.inchi",
+	"meta_data.nelec",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_order",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wcg_batch",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.user_defined_dict.clc_file",
+	"meta_data.user_defined_dict.zip_file",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+A single species (fields missing):[
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.host",
+	"meta_data.program",
+	"meta_data.project_name",
+	"meta_data.status.current_work_order",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wcg_batch",
+	"meta_data.user_defined_dict.clc_file",
+	"meta_data.user_defined_dict.zip_file",
+	"meta_data.version",
+	"meta_data.wall_clock_time",
+	"meta_data.worker_name",
+	"properties.distance_matrix",
+	"properties.gap",
+	"properties.homo",
+	"properties.lumo",
+	"properties.multipoles",
+	"properties.open_circuit_voltage",
+	"properties.power_conversion_efficiency",
+	"properties.rmsd_w_parent_list",
+	"properties.sa_score",
+	"properties.short_circuit_current_density",
+	"properties.sites",
+	"properties.total_energy",
+	"properties.total_nuclear_energy",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number"
+]
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"calculation_type_list",
+	"child_calculation_list",
+	"coord_list",
+	"excited_states",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.work_history_list",
+	"meta_data.tag_list",
+	"meta_data.user_defined_list",
+	"molecule",
+	"normal_mode_list",
+	"orbital_energy_list",
+	"parent_calculation_list",
+	"theory.annotation_list",
+	"theory.solvent_model.{}",
+	"theory.theory_description",
+	"theory.theory_level",
+	"user_defined_property_dict.{}",
+	"user_defined_property_list",
+	"velocity_list"
+]
+
+--------------------------------------------------------------------------------------------
+
+
+Super species for cep_syn.file_audit_trail: [
+	"_id",
+	"document_creation_date",
+	"document_update_date",
+	"file_name",
+	"file_status",
+	"user_defined_dict.base_directory",
+	"user_defined_dict.cep_file_list",
+	"user_defined_dict.error_directory",
+	"user_defined_dict.full_file_list",
+	"user_defined_dict.staging_directory",
+	"user_defined_dict.suspend_directory",
+	"user_defined_dict.target_directory",
+	"user_defined_dict.target_file_list",
+	"user_defined_dict.target_geom_list",
+	"user_defined_dict.temp_directory",
+	"user_defined_dict.working_directory",
+	"user_defined_list"
+]
+
+A single species (fields missing):[
+	"user_defined_dict.error_directory",
+	"user_defined_dict.staging_directory",
+	"user_defined_dict.suspend_directory"
+]
+
+A single species (fields missing):[
+	"user_defined_dict.cep_file_list",
+	"user_defined_dict.full_file_list",
+	"user_defined_dict.target_file_list",
+	"user_defined_dict.target_geom_list"
+]
+
+A single species (fields missing):[
+	"user_defined_dict.cep_file_list",
+	"user_defined_dict.error_directory",
+	"user_defined_dict.full_file_list",
+	"user_defined_dict.staging_directory",
+	"user_defined_dict.suspend_directory",
+	"user_defined_dict.target_file_list",
+	"user_defined_dict.target_geom_list"
+]
+
+A single species (fields missing):[
+	"user_defined_dict.base_directory",
+	"user_defined_dict.cep_file_list",
+	"user_defined_dict.error_directory",
+	"user_defined_dict.full_file_list",
+	"user_defined_dict.staging_directory",
+	"user_defined_dict.suspend_directory",
+	"user_defined_dict.target_directory",
+	"user_defined_dict.target_file_list",
+	"user_defined_dict.target_geom_list",
+	"user_defined_dict.temp_directory",
+	"user_defined_dict.working_directory"
+]
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"document_creation_date",
+	"document_update_date",
+	"file_name",
+	"file_status",
+	"user_defined_list"
+]
+
+--------------------------------------------------------------------------------------------
+
+
+Super species for cep_syn.molecular_linkage: [
+	"_id",
+	"calculation_list",
+	"child_molecule_list",
+	"child_reactive_mol_list",
+	"in_reactive_mol_list",
+	"info.reaction_method",
+	"info.reaction_smarts",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"out_mol_list",
+	"parent_molecule_list",
+	"parent_reactive_mol_list"
+]
+
+A single species (fields missing):[
+	"in_reactive_mol_list",
+	"out_mol_list"
+]
+
+A single species (fields missing):[
+	"child_molecule_list",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"parent_reactive_mol_list"
+]
+
+A single species (fields missing):[
+	"in_reactive_mol_list",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"out_mol_list"
+]
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"calculation_list",
+	"child_reactive_mol_list",
+	"info.reaction_method",
+	"info.reaction_smarts",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"parent_molecule_list"
+]
+
+--------------------------------------------------------------------------------------------
+
+
+Super species for cep_syn.molecule: [
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"electron_count",
+	"file_list",
+	"mass",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_order",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.fingerprints.morgan_bitcount",
+	"meta_data.user_defined_dict.fingerprints.morgan_fingerprint",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_80_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_85_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_90_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_95_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_onbits",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy",
+	"meta_data.user_defined_dict.sa_score",
+	"meta_data.user_defined_list",
+	"molecular_charge",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list",
+	"stoichiometry"
+]
+
+A single species (fields missing):[
+	"electron_count",
+	"mass",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.project_name",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"molecular_charge",
+	"stoichiometry"
+]
+
+A single species (fields missing):[
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy"
+]
+
+A single species (fields missing):[
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy"
+]
+
+A single species (fields missing):[
+	"meta_data.mass",
+	"meta_data.nelec",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy"
+]
+
+A single species (fields missing):[
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy",
+	"molecular_charge"
+]
+
+A single species (fields missing):[
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy"
+]
+
+A single species (fields missing):[
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.user_defined_dict.SYLVIA_SCORE",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy",
+	"molecular_charge"
+]
+
+A single species (fields missing):[
+	"mass",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy",
+	"molecular_charge",
+	"stoichiometry"
+]
+
+A single species (fields missing):[
+	"mass",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy",
+	"molecular_charge",
+	"stoichiometry"
+]
+
+A single species (fields missing):[
+	"electron_count",
+	"mass",
+	"meta_data.nelec",
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.user_defined_dict.clc_ready_to_average",
+	"meta_data.user_defined_dict.duplicate_conformer",
+	"meta_data.user_defined_dict.overall_average.gap",
+	"meta_data.user_defined_dict.overall_average.homo",
+	"meta_data.user_defined_dict.overall_average.lumo",
+	"meta_data.user_defined_dict.overall_average.open_circuit_voltage",
+	"meta_data.user_defined_dict.overall_average.power_conversion_efficiency",
+	"meta_data.user_defined_dict.overall_average.sa_score",
+	"meta_data.user_defined_dict.overall_average.short_circuit_current_density",
+	"meta_data.user_defined_dict.overall_average.total_energy",
+	"meta_data.user_defined_dict.overall_average.total_nuclear_energy",
+	"molecular_charge",
+	"stoichiometry"
+]
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_order",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.work_history_list",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.fingerprints.morgan_bitcount",
+	"meta_data.user_defined_dict.fingerprints.morgan_fingerprint",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_80_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_85_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_90_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_modhashes.sim_95_pct",
+	"meta_data.user_defined_dict.fingerprints.morgan_onbits",
+	"meta_data.user_defined_dict.sa_score",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
+]
+
+--------------------------------------------------------------------------------------------
+
+
+Super species for cep_syn.reactive_molecule: [
+	"_id",
+	"child_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.generation",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"molecule",
+	"parent_list",
+	"reference",
+	"source"
+]
+
+A single species (fields missing):[
+	"source"
+]
+
+A single species (fields missing):[
+	"meta_data.status.released",
+	"meta_data.status.transferred",
+	"molecule",
+	"source"
+]
+
+A single species (fields missing):[
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.contact_email",
+	"meta_data.contact_name",
+	"meta_data.data_type",
+	"meta_data.generation",
+	"meta_data.status.approved",
+	"meta_data.status.characterized",
+	"meta_data.status.current_status",
+	"meta_data.status.current_work_priority",
+	"meta_data.status.device_made",
+	"meta_data.status.released",
+	"meta_data.status.status_list",
+	"meta_data.status.suggested",
+	"meta_data.status.synthesized",
+	"meta_data.status.transferred",
+	"meta_data.status.work_history_list",
+	"meta_data.status.wu_analysed",
+	"meta_data.status.wu_created",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"molecule"
+]
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"child_list",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.inchi",
+	"meta_data.inchi_key",
+	"meta_data.key",
+	"meta_data.project_name",
+	"meta_data.smiles",
+	"meta_data.tag_list",
+	"parent_list",
+	"reference"
+]
+
+--------------------------------------------------------------------------------------------
+
+
+Super species for cep_syn.tt: [
+	"_id",
+	"tt"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"tt"
+]
+
+--------------------------------------------------------------------------------------------
+
+

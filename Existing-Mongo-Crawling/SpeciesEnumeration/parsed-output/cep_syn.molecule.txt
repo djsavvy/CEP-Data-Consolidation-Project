@@ -249,9 +249,8 @@ A single species (fields missing):[
 	"stoichiometry"
 ]
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"calculation_list",
 	"child_list",
@@ -292,3 +291,7 @@ Fields present in every species:[
 	"parent_list",
 	"reactive_mol_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

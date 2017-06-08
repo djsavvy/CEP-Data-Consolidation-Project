@@ -16,9 +16,8 @@ Super species for cep_mol_test.reactive_molecule: [
 A single species (fields missing):
 	(no fields missing) -- the super species actually exists!
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"child_list",
 	"creator",
@@ -32,3 +31,7 @@ Fields present in every species:[
 	"source",
 	"tag_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

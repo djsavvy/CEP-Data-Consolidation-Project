@@ -54,9 +54,8 @@ A single species (fields missing):[
 	"meta_data.user_defined_dict.duplicate_conformer"
 ]
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"calculation_list",
 	"child_list",
@@ -97,3 +96,7 @@ Fields present in every species:[
 	"reactive_mol_list",
 	"stoichiometry"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

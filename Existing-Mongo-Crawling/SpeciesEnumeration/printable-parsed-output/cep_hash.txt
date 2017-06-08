@@ -1,4 +1,4 @@
-Super species for cep_legacy.calculation: [
+Super species for cep_hash.calculation: [
 	"_id",
 	"calculation_type_list",
 	"child_calculation_list",
@@ -11,30 +11,10 @@ Super species for cep_legacy.calculation: [
 	"meta_data.data_type",
 	"meta_data.document_creation_date",
 	"meta_data.document_update_date",
-	"meta_data.generation",
-	"meta_data.inchi",
-	"meta_data.inchi_key",
 	"meta_data.key",
-	"meta_data.mass",
-	"meta_data.project_name",
 	"meta_data.smiles",
-	"meta_data.status.approved",
-	"meta_data.status.characterized",
-	"meta_data.status.current_status",
-	"meta_data.status.current_work_priority",
-	"meta_data.status.device_made",
-	"meta_data.status.status_list",
-	"meta_data.status.suggested",
-	"meta_data.status.synthesized",
-	"meta_data.status.work_history_list",
-	"meta_data.status.wu_analysed",
-	"meta_data.status.wu_created",
 	"meta_data.tag_list",
-	"meta_data.user_defined_dict.audit_trail_id",
-	"meta_data.user_defined_dict.clc_file",
-	"meta_data.user_defined_dict.mol_obj_from",
-	"meta_data.user_defined_dict.sa_score",
-	"meta_data.user_defined_dict.zip_file",
+	"meta_data.user_defined_dict.{}",
 	"meta_data.user_defined_list",
 	"molecule",
 	"normal_mode_list",
@@ -47,7 +27,6 @@ Super species for cep_legacy.calculation: [
 	"properties.open_circuit_voltage",
 	"properties.power_conversion_efficiency",
 	"properties.rmsd_w_parent_list",
-	"properties.sa_score",
 	"properties.short_circuit_current_density",
 	"properties.sites",
 	"properties.total_energy",
@@ -56,10 +35,6 @@ Super species for cep_legacy.calculation: [
 	"properties.unrestricted_homo_list",
 	"properties.unrestricted_lumo_list",
 	"properties.unrestricted_occupied_orbital_number",
-	"theory.annotation_list",
-	"theory.solvent_model.{}",
-	"theory.theory_description",
-	"theory.theory_level",
 	"user_defined_property_dict.{}",
 	"user_defined_property_list",
 	"velocity_list"
@@ -69,29 +44,14 @@ A single species (fields missing):
 	(no fields missing) -- the super species actually exists!
 
 A single species (fields missing):[
-	"theory.annotation_list",
-	"theory.solvent_model.{}",
-	"theory.theory_description",
-	"theory.theory_level"
-]
-
-A single species (fields missing):[
-	"properties.distance_matrix",
 	"properties.gap",
 	"properties.homo",
 	"properties.lumo",
 	"properties.open_circuit_voltage",
 	"properties.power_conversion_efficiency",
-	"properties.rmsd_w_parent_list",
-	"properties.sa_score",
 	"properties.short_circuit_current_density",
-	"properties.sites",
 	"properties.total_energy",
-	"properties.total_nuclear_energy",
-	"properties.unrestricted_gap_list",
-	"properties.unrestricted_homo_list",
-	"properties.unrestricted_lumo_list",
-	"properties.unrestricted_occupied_orbital_number"
+	"properties.total_nuclear_energy"
 ]
 
 
@@ -108,38 +68,76 @@ A single species (fields missing):[
 	"meta_data.data_type",
 	"meta_data.document_creation_date",
 	"meta_data.document_update_date",
-	"meta_data.generation",
-	"meta_data.inchi",
-	"meta_data.inchi_key",
 	"meta_data.key",
-	"meta_data.mass",
-	"meta_data.project_name",
 	"meta_data.smiles",
-	"meta_data.status.approved",
-	"meta_data.status.characterized",
-	"meta_data.status.current_status",
-	"meta_data.status.current_work_priority",
-	"meta_data.status.device_made",
-	"meta_data.status.status_list",
-	"meta_data.status.suggested",
-	"meta_data.status.synthesized",
-	"meta_data.status.work_history_list",
-	"meta_data.status.wu_analysed",
-	"meta_data.status.wu_created",
 	"meta_data.tag_list",
-	"meta_data.user_defined_dict.audit_trail_id",
-	"meta_data.user_defined_dict.clc_file",
-	"meta_data.user_defined_dict.mol_obj_from",
-	"meta_data.user_defined_dict.sa_score",
-	"meta_data.user_defined_dict.zip_file",
+	"meta_data.user_defined_dict.{}",
 	"meta_data.user_defined_list",
 	"molecule",
 	"normal_mode_list",
 	"orbital_energy_list",
 	"parent_calculation_list",
+	"properties.distance_matrix",
+	"properties.rmsd_w_parent_list",
+	"properties.sites",
+	"properties.unrestricted_gap_list",
+	"properties.unrestricted_homo_list",
+	"properties.unrestricted_lumo_list",
+	"properties.unrestricted_occupied_orbital_number",
 	"user_defined_property_dict.{}",
 	"user_defined_property_list",
 	"velocity_list"
+]
+
+--------------------------------------------------------------------------------------------
+
+
+Super species for cep_hash.molecule: [
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.smiles",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
+]
+
+A single species (fields missing):
+	(no fields missing) -- the super species actually exists!
+
+
+-----Fields present in every species:-----[
+	"_id",
+	"calculation_list",
+	"child_list",
+	"descriptor_list",
+	"diagram_list",
+	"file_list",
+	"meta_data.annotation_list",
+	"meta_data.atom_list",
+	"meta_data.data_type",
+	"meta_data.document_creation_date",
+	"meta_data.document_update_date",
+	"meta_data.key",
+	"meta_data.smiles",
+	"meta_data.tag_list",
+	"meta_data.user_defined_dict.{}",
+	"meta_data.user_defined_list",
+	"nickname_list",
+	"parent_list",
+	"reactive_mol_list"
 ]
 
 --------------------------------------------------------------------------------------------

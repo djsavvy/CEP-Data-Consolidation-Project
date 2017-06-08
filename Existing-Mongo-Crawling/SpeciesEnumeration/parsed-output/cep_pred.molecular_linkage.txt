@@ -93,9 +93,8 @@ A single species (fields missing):[
 	"parent_reactive_mol_list"
 ]
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"calculation_list",
 	"child_reactive_mol_list",
@@ -115,3 +114,7 @@ Fields present in every species:[
 	"meta_data.user_defined_list",
 	"parent_molecule_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+

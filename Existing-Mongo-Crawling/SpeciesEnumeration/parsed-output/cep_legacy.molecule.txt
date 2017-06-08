@@ -42,9 +42,8 @@ Super species for cep_legacy.molecule: [
 A single species (fields missing):
 	(no fields missing) -- the super species actually exists!
 
--------------------------------------------------------------------
 
-Fields present in every species:[
+-----Fields present in every species:-----[
 	"_id",
 	"calculation_list",
 	"child_list",
@@ -84,3 +83,7 @@ Fields present in every species:[
 	"parent_list",
 	"reactive_mol_list"
 ]
+
+--------------------------------------------------------------------------------------------
+
+
