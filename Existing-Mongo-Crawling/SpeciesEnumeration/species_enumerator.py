@@ -50,7 +50,7 @@ def extract_sample_cursors(collection):
     doc_count = collection.count({})
     for i in range(4):
         skip_amount = i * (doc_count//8)
-        cursors.append( collection.find({}, skip = skip_amount, limit = 100, no_cursor_timeout = True) )
+        cursors.append( collection.find({}, skip = skip_amount, limit = 100, no_cursor_timeout = True).sort("_id", 1) )
         cursors.append( collection.find({}, skip = skip_amount, limit = 100, no_cursor_timeout = True).sort("_id", -1) )
     return cursors
 
@@ -61,15 +61,25 @@ def process_collection(collection):
     return
 
 
+# more efficient since we only need to traverse the collection once, and finding by _id is pretty quick because of the index (at least I think so)
 def new_process_collection(collection):
     doc_count = collection.count({})
-    skip_amount = doc_count//10
-    cursor = collection.find({}, no_cursor_timeout = True)
-    while cursor.alive:
-        for i in range(500):
-            if cursor.alive:
-                process_document(cursor.next())
-        cursor.skip(skip_amount)
+    skip_amount = 700
+    cursor = collection.find({}, limit = 100).sort("_id", 1) 
+    currentObjectId = None
+
+#    cur_cursor_count = 1
+
+    while cursor.count() > 100 + skip_amount + 2:
+        for document in cursor:
+            process_document(document)
+            currentObjectId = document.get('_id')
+
+        cursor = collection.find({"_id" : {"$gt" : currentObjectId}}, skip = skip_amount, limit = 100).sort("_id", 1)
+#        cur_cursor_count += 1
+#        print('got cursor', str(cur_cursor_count))
+#        print("Got a cursor!")
+    return 
 
 
 
@@ -114,8 +124,8 @@ for db_name in client.database_names():
         collection = database[coll_name]
         distinct_species = {} 
         print("Starting on ", db_name, coll_name)
-        process_collection(collection)
-#            new_process_collection(coll)
+#        process_collection(collection)
+        new_process_collection(collection)
         print("Found ", len(distinct_species.keys()), " distinct species.")
         print("They are: ")
         pprint.pprint(distinct_species)
