@@ -6,6 +6,14 @@ My responsibility for this summer is to consolidate the data from simulations th
 
 This is the repository housing my files for this project, though care will be taken to ensure that my login credentials or other sensitive data are not leaked in this repository.  
 
+I have kept a log of my progress on this project here: [Project Log](/Project_Log.md)
+
+# UPDATE
+
 UPDATE: (June 9, 2017) Unfortunately I had some unexpected personal issues come up in the last couple of days and so today is my last day in the lab :(
 
 I was still able to make a catalog of the data records stored in the existing CEP mongo databases -- very helpful for consolidating the old CEP data into one place. 
+
+## Continuing My Work?
+
+If you are continuing my work or seeking to build upon my scripts, the best place to start is with the [Species Enumeration README](/ExistingMongoCrawling/SpeciesEnumeration/README.md)
