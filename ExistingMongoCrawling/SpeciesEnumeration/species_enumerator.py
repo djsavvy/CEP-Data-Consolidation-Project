@@ -124,8 +124,8 @@ for db_name in client.database_names():
         collection = database[coll_name]
         distinct_species = {} 
         print("Starting on ", db_name, coll_name)
-#        process_collection(collection)
-        new_process_collection(collection)
+        process_collection(collection)
+#        new_process_collection(collection)
         print("Found ", len(distinct_species.keys()), " distinct species.")
         print("They are: ")
         pprint.pprint(distinct_species)
