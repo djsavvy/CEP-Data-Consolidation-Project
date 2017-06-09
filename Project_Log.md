@@ -183,3 +183,4 @@ List of resources to parallelize programs:
 	+ lists the intersection of all species -- the list of fields present in every single record in the collection
 - Unfortunately, I had some unexpected personal issues come up in the last couple of days and so today is my last day in the lab :(
 - However, Alex said I was still able to accomplish quite a bit that would be helpful for the CEP team in the future, so I am glad that I was able to make an impact in my three weeks here. 
+- The [Species Enumeration README](/ExistingMongoCrawling/SpeciesEnumeration/README.md) is a file that has much more depth regarding the last stage of the project. It is also designed to be an introduction to whoever continues this project or decieds to build on my work. 
