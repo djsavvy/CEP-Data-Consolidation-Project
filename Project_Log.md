@@ -149,7 +149,7 @@ List of resources to parallelize programs:
 - The little book of Semaphores by Allen Downey -- cool resource to check out 
 
 
-## Friday, May 25 - Thursday, Jun 1
+## Friday, May 25 - Friday, June 2
 
 - Unfortunately, I got really sick :(
 	+ Took Friday off, Monday was a holiday, have been working half-days since then
@@ -162,3 +162,24 @@ List of resources to parallelize programs:
 - I made sure both versions of the program did not include the login credentials so I could safely push them to github
 
 
+## Monday, June 5 - Friday, June 9
+
+- I got a LOT done this week :)
+- Spent a couple days writing scripts to determine all the top-level fields in any given collection by scanning every single row
+	+ used a multiprocessing approach to speed things up significantly
+	+ this was quite tricky -- Pymongo connections are thread-safe but not fork-safe
+	+ I tried using threads at first, and it worked, but I realized that Python's implementation of multithreading does not actually provide a speedup since the threads run linearly
+	+ switched to using Python's multiprocessing library, which required me to use forks
+	+ Due to the non-fork-safe pymongo connections, and Pymongo's built-in connection pooling, when I ran a parallel collection scan I could not actually iterate over the resulting cursors in the same connection
+	+ I had to look at the pymongo source code, copy part of it, and modify it -- I created a custom parallel_scan method that returned cursor objects I could reference using a new connection, making it fork-safe
+- Unfortunately, I never ended up directly using the top-level field analysis done above. Instead, we proceeded as follows:
+- I wrote scripts to download all of the mongo data onto my local machine
+- Wrote scripts to enumerate all the species present in each collection
+	+ uses a probabilistic approach, only samples about 1000 records from each collection but does so in a way that we can be reasonably confident we have not missed any species
+- Wrote scripts to parse these species into a pretty format
+	+ organized by database, by collection
+	+ lists a "superspecies" for each collection -- a list of all the fields in that collection
+	+ lists the individual species as sets of fields missing from the superspecies
+	+ lists the intersection of all species -- the list of fields present in every single record in the collection
+- Unfortunately, I had some unexpected personal issues come up in the last couple of days and so today is my last day in the lab :(
+- However, Alex said I was still able to accomplish quite a bit that would be helpful for the CEP team in the future, so I am glad that I was able to make an impact in my three weeks here. 
