@@ -90,15 +90,15 @@ def custom_parallel_scan(collection, num_cursors, **kwargs):
 
 
     
-def ccursorToCursor(ccursor, username, password, db_name, coll_name):
+def customCursorToCursor(custom_cursor, username, password, db_name, coll_name):
     (pdb, pcoll, pclient) = mongoConnectionCreator(username, password, db_name, coll_name)
     address = ('molspace.rc.fas.harvard.edu', 27017)
-#    return (CommandCursor(pclient[pdb][pcoll], ccursor, address), pdb, pcoll, pclient)
-    return (CommandCursor(pcoll, ccursor, address), pdb, pcoll, pclient)
+#    return (CommandCursor(pclient[pdb][pcoll], custom_cursor, address), pdb, pcoll, pclient)
+    return (CommandCursor(pcoll, custom_cursor, address), pdb, pcoll, pclient)
 
 
-def fullProcessCcursor(process_fields_list, total_records_read, ccursor, username, password, db_name, coll_name, lock):
-    cursor, pdb, pcoll, pclient = ccursorToCursor(ccursor, username, password, db_name, coll_name)
+def fullProcessCustomCursor(process_fields_list, total_records_read, custom_cursor, username, password, db_name, coll_name, lock):
+    cursor, pdb, pcoll, pclient = customCursorToCursor(custom_cursor, username, password, db_name, coll_name)
     processCursor(process_fields_list, total_records_read, cursor, pdb, pcoll, pclient, lock)
     pclient.close()
 
@@ -155,8 +155,8 @@ def main(argv):
 
     jobs = []
     custom_cursors = custom_parallel_scan(coll, cpu_count)
-    for ccursor in custom_cursors:
-        p = multiprocessing.Process(target = fullProcessCcursor, args = (process_fields_list, total_records_read, ccursor, username, password, db_name, coll_name, records_lock))
+    for custom_cursor in custom_cursors:
+        p = multiprocessing.Process(target = fullProcessCustomCursor, args = (process_fields_list, total_records_read, custom_cursor, username, password, db_name, coll_name, records_lock))
         jobs.append(p)
         p.start()
 
