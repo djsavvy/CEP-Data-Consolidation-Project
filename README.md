@@ -6,3 +6,6 @@ My responsibility for this summer is to consolidate the data from simulations th
 
 This is the repository housing my files for this project, though care will be taken to ensure that my login credentials or other sensitive data are not leaked in this repository.  
 
+UPDATE: (June 9, 2017) Unfortunately I had some unexpected personal issues come up in the last couple of days and so today is my last day in the lab :(
+
+I was still able to make a catalog of the data records stored in the existing CEP mongo databases -- very helpful for consolidating the old CEP data into one place. 
