@@ -38,7 +38,7 @@ An official PyMongo maintainer said [here](https://jira.mongodb.org/browse/PYTHO
 
 There were some solutions suggested using [`Map_reduce`](https://stackoverflow.com/questions/15092884/how-can-i-return-an-array-of-mongodb-objects-in-pymongo-without-a-cursor-can), but these have two problems: 1. they do not support arbitrary processing of documents nearly as easily as Python does, and 2. `Map_reduce` significantly increases load on the server during the duration of the calculation, and if there is insufficient memory on the server to process everything at once the command will fail. 
 
-Also, since both [`Cursor`s](http://api.mongodb.com/python/current/api/pymongo/cursor.html) and [`CommandCursor`s](http://api.mongodb.com/python/current/api/pymongo/command_cursor.html) are not [picklable](https://docs.python.org/3.6/library/pickle.html), they cannot be passed in pipes or queues among processes, further increasing the complexity of the problem. 
+Also, since both [`Cursor`](http://api.mongodb.com/python/current/api/pymongo/cursor.html) and [`CommandCursor`](http://api.mongodb.com/python/current/api/pymongo/command_cursor.html) are not [picklable](https://docs.python.org/3.6/library/pickle.html), they cannot be passed in pipes or queues among processes, further increasing the complexity of the problem. 
 
 It seems like we have truly reached an impasse. Either we must give up on the idea of concurrency and process the cursors returned by `parallel_scan` serially, or we must be willing to take the risk of unsafely duplicating `MongoClient` connections across processes. Right?
 
@@ -46,7 +46,7 @@ It seems like we have truly reached an impasse. Either we must give up on the id
 
 After a couple long days of digging through hundreds of abandoned StackOverflow threads and documentation pages, I was about ready to call it quits and just run my threaded implementation on the entire CEP dataset. However, in a final act of desparation, I decided to look at the [source code](https://github.com/mongodb/mongo-python-driver) of PyMongo itself. 
 
-Here's the source for `parallel_scan()` in [`collection.py`](mongo-python-driver/pymongo/collection.py) after stripping out comments:
+Here's the source for `parallel_scan()` in [`collection.py`](https://github.com/mongodb/mongo-python-driver/blob/master/pymongo/collection.py#L1241) after stripping out comments:
 
 ```python
     def parallel_scan(self, num_cursors, **kwargs):
@@ -61,3 +61,47 @@ Here's the source for `parallel_scan()` in [`collection.py`](mongo-python-driver
         return [CommandCursor(self, cursor['cursor'], sock_info.address)
                 for cursor in result['cursors']]
 ```
+
+It seems like this method is generating `cmd` as the command to send to the Mongo server, then storing the server's response in the variable `result`. The interesting part is the `return` statement: PyMongo seems to be creating something called a `CommandCursor` for each cursor in the returned document. (As we can see in Mongo's official [docs](https://docs.mongodb.com/v2.6/reference/command/parallelCollectionScan/), `parallelCollectionScan` returns a document with an array of cursors). 
+
+We also note that also takes in `sock_info.address` as a parameter to its constructor -- thus, the only information we need besides the cursor id returned by the server is `sock_info.address`. This lets us create a `CommandCursor`, a Python object we can iterate over to return the documents referenced by the cursor. 
+
+The solution essentially presents itself from here -- we can intecept the `parallel_scan` method to get a cursor id, fork to a new process, open a new `MongoClient`, and then create a `CommandCursor` from the given cursor id. This safely gives us a set of iterables we can process in parallel. 
+
+We add the following `import` statements:
+```python
+from bson.son import SON
+from pymongo.command_cursor import CommandCursor
+```
+and then write our own hacked-together, custom parallel scan method:
+```python
+# this function is somewhat ripped from the pymongo source code itself
+# shouldn't ever need kwargs, but left it in there just to make sure this behaves exactly as expected
+# each element of the output looks like this: {'firstbatch' : [], 'ns' : db_name.coll_name, 'id': <some id>}
+# the sock_info.address is just ('molspace.rc.fas.harvard.edu', 27017)
+def custom_parallel_scan(collection, num_cursors, **kwargs):
+    cmd = SON([('parallelCollectionScan', collection._Collection__name), ('numCursors', num_cursors)])
+    cmd.update(kwargs)
+
+    with collection._socket_for_reads() as (sock_info, slave_ok):
+        result = collection._command(sock_info, cmd, slave_ok, read_concern = collection.read_concern)
+    return [cursor['cursor'] for cursor in result['cursors']]
+```
+
+Then, for each custom cursor in the result of `custom_parallel_scan()`, we can get back to PyMongo's standard connection and cursor formats with the following method:
+
+```python
+def customCursorToCursor(custom_cursor, username, password, db_name, coll_name):
+    (pdb, pcoll, pclient) = mongoConnectionCreator(username, password, db_name, coll_name)
+    address = ('molspace.rc.fas.harvard.edu', 27017)
+    return (CommandCursor(pcoll, custom_cursor, address), pdb, pcoll, pclient)
+```
+These can safely be iterated in parallel. 
+
+### Some Final Thoughts
+
+Although the above solution is fork-safe, and it works correctly and efficiently, it's not "officially" recommended for a couple of reasons:
+- The PyMongo internals could always change, rendering this method obsolete. 
+- The PyPI `bson` and `pymongo` packages are incompatible with each other. (see [this](https://jira.mongodb.org/browse/PYTHON-757) thread)
+
+However, for a quick-and-dirty solution not in a production environment, my method works rather effectively. The code taken from PyMongo itself is small enough (and central enough to the functionality) that it is quite unlikely the codebase changes enough to break my script. The `bson` import is also specific enough not to break anything else in PyMongo, as far as I could tell. Use my technique at your own risk, though. :)
