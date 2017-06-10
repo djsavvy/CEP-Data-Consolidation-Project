@@ -35,7 +35,7 @@ I clearly wasn't the only one to run into this problem. [This article](https://d
 
 [This short thread](http://grokbase.com/t/gg/mongodb-user/14cs38006q/parallel-collection-scan-for-query-results) suggests forgoing `parallelCollectionScan` altogether and instead performing multiple queries based on index values. However, without knowing the exact distribution of index values in advance, this method is impractical, as noted by the author himself. 
 
-An official PyMongo maintainer even said [here](https://jira.mongodb.org/browse/PYTHON-1078) that such a solution would never be possible to implement in PyMongo (or even Python in general). 
+An official PyMongo maintainer even said [here](https://jira.mongodb.org/browse/PYTHON-1078) that a fork-safe `parallel_scan` solution would never be possible to implement in PyMongo (or even Python in general). Logically, this didn't feel right to me, so I kept looking for more options. 
 
 There were some solutions suggested using [`Map_reduce`](https://stackoverflow.com/questions/15092884/how-can-i-return-an-array-of-mongodb-objects-in-pymongo-without-a-cursor-can), but these have two problems: 
 1. they do not support arbitrary processing of documents nearly as easily as Python does, and 
