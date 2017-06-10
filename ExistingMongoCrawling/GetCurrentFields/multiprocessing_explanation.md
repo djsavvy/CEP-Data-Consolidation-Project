@@ -1,4 +1,4 @@
-# An Explanation of my Struggles using PyMongo with Multiprocessing
+# How to Effectively use PyMongo's `parallel_scan()` with Python's `multiprocessing`
 
 As part of my work for the Harvard Clean Energy Project, I wrote a script called [`mp_collection_crawler.py`](/ExistingMongoCrawling/GetCurrentFields/mp_collection_crawler.py). This program, given the name of a database and a collection within that database, scans every single document in the collection and returns a set of all the top-level fields found anywhere in the collection. 
 
